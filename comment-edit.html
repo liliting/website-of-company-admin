@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>消息系统设置</title>
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./js/kindeditor/themes/default/default.css">
+</head>
+<body class="admin-infor">
+	<div class="admin-contains">
+		<div class="admin-nav">
+			<strong>官网消息 > 消息系统设置</strong>
+		</div>
+		<form action="">
+			<div class="admin-content">
+				<span class="admin-di">基本设置</span>
+				<ul class="infor-ul">
+					<li class="infor-li">	
+						<span class="infor-left">信息提交开启/关闭：</span>
+
+							<label for="open" class="open-close">
+								<input type="radio" id="open" name="open-close" value="open" />开启
+							</label>
+					
+							<label for="clo" class="open-close">
+								<input type="radio" id="clo" name="open-close" />关闭
+							</label>
+					
+						<i class="pro">*关闭后将无法接受消息</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">防刷新时间：</span>
+						<input type="text" class="right" placeholder="120">
+						<i class="pro">*秒。同一IP2次提交的最小间隔时间</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">是否发送邮件：</span>
+						<span class="admin-checkbox check-com-edit">
+							<input type="checkbox" id="client" />
+							<label for="client" class="com-edit-label">是否将客户消息发送到指定邮箱</label>
+						</span>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">留言邮件接受邮箱：</span>
+						<input type="text" class="right" value="874634365@qq.com">
+					</li>
+				</ul>
+
+				<span class="admin-di">搜索设置</span>
+				<ul class="infor-ul">
+					<li class="infor-li">
+						<span class="infor-left">是否发送邮件：</span>
+						<span class="admin-checkbox check-com-edit">
+							<input type="checkbox" id="huifu" />
+							<label for="huifu" class="com-edit-label">勾选后将自动向提交表单的用户回复邮件</label>
+						</span>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">Email字段名：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="name">姓名</option>
+								<option value="email">邮箱</option>
+								<option value="other">其他</option>
+							</select>
+						</span>
+						<i class="pro top">* 用于获取用户的邮箱地址，以便回复邮件。</i>
+					</li>
+
+					<li class="infor-li">
+						<span class="infor-left">回复邮件标题：</span>
+						<input type="text" class="right" placeholder="标题">
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">回复邮件内容：</span>
+						<textarea name="" id="" cols="44" rows="10" class="right" placeholder="内容" size="500"></textarea>			
+					</li>
+				</ul>
+				<input type="submit" value="保存" class="button save"/> 
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

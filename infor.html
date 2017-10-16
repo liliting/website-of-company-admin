@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本信息</title>
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./js/kindeditor/themes/default/default.css">
+</head>
+<body class="admin-infor">
+	<div class="admin-contains">
+		<div class="admin-nav">
+			<strong>基本信息设置</strong>
+		</div>
+		<form action="">
+			<div class="admin-content">
+				<span class="admin-di">基本信息</span>
+				<ul class="infor-ul">
+					<li class="infor-li">	
+						<span class="infor-left">网站名称：</span>
+						<input type="text" class="right" value="北京****科技有限公司">
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">网站logo：</span>
+						<img src="" alt="logo" class="right min-img" width="255" height="120" >
+						<button class="upload"><input type="file" class="right" value="上传">上传</button>
+						<i class="pro" id="img-pro">*建议图片大小小于300k</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">网站地址：</span>
+						<input type="text" class="right" value="">
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">网站关键词：</span>
+						<input type="text" class="right" placeholder="关键词" id="ddd">
+						<i class="pro">*多个关键词用<span id="aaa">00</span>空格隔开</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">网站描述：</span>
+						<textarea name="" id="descbb" cols="44" rows="10" class="right" placeholder="描述..." size="500"></textarea>
+						<i class="pro des-pro">*500字以内，当前已输入<span id="nnn">0</span>个字符</i>
+					</li>
+				</ul>
+			</div>
+
+			<div class="admin-content" id="banner">
+				<span class="admin-di">首页banner</span>
+				<!-- <div class=""> -->
+				<ul class="infor-ul index-banner">
+					<li class="infor-li">	
+						<span class="infor-left top">首页banner1：</span>
+						<img src="" alt="首页banner" class="right min-img" width="255" height="120">
+						<button class="upload"><input type="file" class="right" value="上传">上传</button>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">链接网址：</span>
+						<input type="text" class="right">
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">排序：</span>
+						<input type="text" class="right" value="1">
+					</li>
+				</ul>
+				<a href="javascript:addbanner();" class="button add">添加</a>
+				<!-- </div> -->
+			</div>
+			<div class="admin-nav">
+				<strong>底栏信息设置</strong>
+			</div>
+			<div class="admin-content">
+				<span class="admin-di">二维码编辑</span>
+				<ul class="infor-ul">
+					<li class="infor-li">	
+						<span class="infor-left top">图片1：</span>
+						<img src="" alt="图片1" class="right min-img" width="255" height="120">
+						<button class="upload"><input type="file" class="right" value="上传" >上传</button>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">描述：</span>
+						<textarea name="" id="" cols="44" rows="10" class="right" placeholder="描述.." size="500"></textarea>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">图片2：</span>
+						<img src="" alt="图片2" class="right min-img" width="255" height="120" >
+						<button class="upload"><input type="file" class="right" value="上传">上传</button>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">描述：</span>
+						<textarea name="" id="" cols="44" rows="10" class="right" placeholder="描述.." size="500"></textarea>
+					</li>
+				</ul>
+				<span class="admin-di">内容编辑</span>
+				<script charset="utf-8" src="./js/kindeditor/kindeditor-min.js"></script>
+				<script charset="utf-8" src="./js/kindeditor/lang/zh_CN.js"></script>
+				<script>
+					var editor;
+					KindEditor.ready(function(K) {
+						editor = K.create('textarea[name="content"]', {
+							allowFileManager : true
+						});
+						K('input[name=getHtml]').click(function(e) {
+							alert(editor.html());//获取html中内容
+						});
+					});
+				</script>
+				<div class="infor-ul">
+					<textarea name="content" class="kindeditor"></textarea>
+				</div>
+				<input type="submit" value="保存" class="button save"/>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript">
+		function addbanner(){
+			$('.index-banner').last().after($('.index-banner').first().clone(true));
+			$('.index-banner').last().css('border-top','1px dashed #ccc');
+		}
+	</script>
+</body>
+</html>

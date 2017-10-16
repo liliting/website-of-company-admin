@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>内容管理</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="admin-cms">
+	<div class="admin-contains">
+		<div class="admin-nav">
+			<strong>内容管理设置</strong>
+		</div>
+		<div id="cms-tab">
+			<a href="#" class="active">页面管理</a>
+			<a href="#">文章管理</a>
+			<a href="#">人才管理</a>
+		</div>
+		<!-- 页面管理 -->
+		<div class="admin-content" id="pagecms">
+			<div class="admin-select fl">
+				<select name="order" id="order">
+					<option value="all">全部</option>
+					<option value="reorder">排序</option>
+					<option value="page-view">浏览量</option>
+					<option value="refresh-time">更新时间</option>
+				</select>
+			</div>
+			<form class="admin-search fr">
+				<input type="text" class="admin-search-text">
+				<input type="submit" value="" class="admin-search-submit">
+			</form>
+			<table width="100%" align="center" border=0 cellpadding="20" class="nav-table">
+				<tr>
+					<th width="10%">选择</th>
+					<th width="10%">排序</th>
+					<th width="15%">名称</th>
+					<th width="10%">浏览量</th>
+					<th width="15%">更新时间</th>
+					<th width="15%">前台显示</th>
+					<th width="25%">操作</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="choose1"  />
+							<label for="choose1" id="chooselabel1"></label>
+						</div>
+					</td>
+					<td>1</td>
+					<td>
+						<input type="text" value="技术支持">
+					</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-page.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="choose2"  />
+							<label for="choose2" id="chooselabel2"></label>
+						</div>
+					</td>
+					<td>2</td>
+					<td>
+						<input type="text" value="技术支持">
+					</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-page.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="choose3"  />
+							<label for="choose3" id="chooselabel3"></label>
+						</div>
+					</td>
+					<td>3</td>
+					<td>
+						<input type="text" value="技术支持">
+					</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-page.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="choose4"  />
+							<label for="choose4" id="chooselabel4"></label>
+						</div>
+					</td>
+					<td>4</td>
+					<td>
+						<input type="text" value="技术支持">
+					</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-page.html">编辑</a>
+					</td>
+				</tr>
+			</table>
+			<a href="" class="all-check all-check-a" style="width:98px;">全选</a>
+			<div class="admin-page">
+				<a href=""><<</a>
+				<a href=""><</a>
+				<span>1</span>
+				<a href="">></a>
+				<a href="">>></a>		
+			</div>
+			<form class="admin-page-form">
+				<input type="text">
+				<input type="submit" value="go">
+			</form>
+			<div class="admin-button">
+				<a href="#" class="button">删除</a>
+				<a href="javascript:void(0);" class="button addtr" >新增</a>
+				<a href="#" class="button">导出</a>
+			</div>
+		</div>
+		<!-- 文章管理 -->
+		<div class="admin-content" id="articlecms">
+			<div class="admin-select fl">
+				<select name="order" id="time">
+					<option value="all">全部</option>
+					<option value="reorder">排序</option>
+					<option value="page-view">浏览量</option>
+					<option value="refresh-time">更新时间</option>
+				</select>		
+			</div>
+			<div class="admin-select fl">
+				<select name="order" id="news">
+					<option value="news">公司新闻</option>
+					<option value="about">最新动态</option>
+				</select>
+			</div>
+			<form class="admin-search fr">
+				<input type="text" class="admin-search-text">
+				<input type="submit" value="" class="admin-search-submit">
+			</form>
+			<table width="100%" align="center" border=0 cellpadding="20">
+				<tr>
+					<th width="8%">选择</th>
+					<th width="8%">排序</th>
+					<th width="27%">标题</th>
+					<th width="10%">浏览量</th>
+					<th width="17%">更新时间</th>
+					<th width="5%">前台显示</th>
+					<th width="25%">操作</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="article1"  />
+							<label for="article1" id="articlelabel1"></label>
+						</div>
+					</td>
+					<td>1</td>
+					<td class="nowarp">关于我们你好得我发你单发发货人可能bfAV版本GV奔波GV比额份儿饭</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-article.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="article2"  />
+							<label for="article2" id="articlelabel2"></label>
+						</div>
+					</td>
+					<td>1</td>
+					<td class="nowarp">关于我们你好得我发你单发发货人可能bfAV版本GV奔波GV比额份儿饭</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-article.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="article3"  />
+							<label for="article3" id="articlelabel3"></label>
+						</div>
+					</td>
+					<td>1</td>
+					<td class="nowarp">关于我们你好得我发你单发发货人可能bfAV版本GV奔波GV比额份儿饭</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-article.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="article4"  />
+							<label for="article4" id="articlelabel4"></label>
+						</div>
+					</td>
+					<td>1</td>
+					<td class="nowarp">关于我们biaotinsdwqirffnasfkkfref</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-article.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="" class="all-check">全选</a>
+					</td>
+				</tr>
+			</table>
+			<div class="admin-page">
+				<a href=""><<</a>
+				<a href=""><</a>
+				<span>1</span>
+				<a href="">></a>
+				<a href="">>></a>		
+			</div>
+			<form class="admin-page-form">
+				<input type="text">
+				<input type="submit" value="go">
+			</form>
+			<div class="admin-button">
+				<a href="#" class="button">删除</a>
+				<a href="#" class="button">新增</a>
+				<a href="#" class="button">导出</a>
+			</div>
+		</div>
+		<!-- 人才管理 -->
+		<div class="admin-content" id="talentscms">
+			<div class="admin-select fl">
+				<select name="order" id="time">
+					<option value="all">全部</option>
+					<option value="reorder">排序</option>
+					<option value="page-view">浏览量</option>
+					<option value="refresh-time">更新时间</option>
+				</select>		
+			</div>
+			<form class="admin-search fr">
+				<input type="text" class="admin-search-text">
+				<input type="submit" value="" class="admin-search-submit">
+			</form>
+			<table width="100%" align="center" border=0 cellpadding="20">
+				<tr>
+					<th width="8%">选择</th>
+					<th width="8%">排序</th>
+					<th width="27%">名称</th>
+					<th width="10%">浏览量</th>
+					<th width="17%">更新时间</th>
+					<th width="5%">前台显示</th>
+					<th width="25%">操作</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="person1"  />
+							<label for="person1" id="personlabel1"></label>
+						</div>
+					</td>
+					<td>1</td>
+					<td class="nowarp">关于我们你好得我发你单发发货人可能bfAV版本GV奔波GV比额份儿饭</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-talents.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="person2"  />
+							<label for="person2" id="personlabel2"></label>
+						</div>
+					</td>
+					<td>1</td>
+					<td class="nowarp">关于我们你好得我发你单发发货人可能bfAV版本GV奔波GV比额份儿饭</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-talents.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="person3"  />
+							<label for="person3" id="personlabel3"></label>
+						</div>
+					</td>
+					<td>1</td>
+					<td class="nowarp">关于我们你好得我发你单发发货人可能bfAV版本GV奔波GV比额份儿饭</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-talents.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="person4"  />
+							<label for="person4" id="personlabel4"></label>
+						</div>
+					</td>
+					<td>1</td>
+					<td class="nowarp">关于我们biaotinsdwqirffnasfkkfref</td>
+					<td>1253</td>
+					<td>2015-07-08</td>
+					<td>
+						<div class="admin-select select-yes">
+							<select name="order">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</div>
+					</td>
+					<td>
+						<a href="#" class="del-one">删除</a>
+						<a href="cms-talents.html">编辑</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="" class="all-check">全选</a>
+					</td>
+				</tr>
+			</table>
+			<div class="admin-page">
+				<a href=""><<</a>
+				<a href=""><</a>
+				<span>1</span>
+				<a href="">></a>
+				<a href="">>></a>		
+			</div>
+			<form class="admin-page-form">
+				<input type="text">
+				<input type="submit" value="go">
+			</form>
+			<div class="admin-button">
+				<a href="#" class="button">删除</a>
+				<a href="#" class="button">新增</a>
+				<a href="#" class="button">导出</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('.admin-content').first().nextAll().hide();
+		$('#cms-tab a').click(function(){
+			var id = $(this).index();
+			active($(this),$('#cms-tab a'));
+			$('.admin-content').hide();
+			$('.admin-content').eq(id).show();
+		});
+
+		function active(addTarget,target){
+			target.each(function(){
+				$(this).removeClass('active');
+			});
+			addTarget.addClass('active');
+		}	
+		function wode(){
+			alert('2');
+		}
+	});
+	</script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>amdin</title>
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="admin-main">
+	<div class="admin-contains">
+		<div class="fl">
+			<div id="section1">
+				<div class="admin-nav">
+					<strong>官网消息</strong>
+				</div>
+				<div class="admin-content">
+					<div class="admin-content-btn">
+						<img src="./images/notice.png" alt="" id="notice">
+						<a href="#" class="active">未读消息</a>
+						<a href="#">待处理消息</a>
+						<a href="javascript:changeMenu('comment.html','3');" id="all-comment">全部消息</a>
+					</div>
+					<table id="message-table" align="center" width="90%" cellpadding="20">
+						<tr height=35>
+							<th width="11%">姓名</th>
+							<th width="30%">联系方式</th>
+							<th width="44%">内容</th>
+							<th width="15%">时间</th>
+						</tr>
+						<tr height=50>
+							<td>长大</td>
+							<td>1258648454@qq.com</td>
+							<td class="mess-con">你好回答拿法额地方拿办fragf</td>
+							<td>2016-03-04</td>
+						</tr>
+						<tr height=50>
+							<td>长大</td>
+							<td>1258648454@qq.com</td>
+							<td class="mess-con">你好回答拿法额地方拿办</td>
+							<td>2016-03-04</td>
+						</tr>
+						<tr height=50>
+							<td>长大</td>
+							<td>1258648454@qq.com</td>
+							<td class="mess-con">你好回答拿法额地方拿办</td>
+							<td>2016-03-04</td>
+						</tr>
+						<tr height=50>
+							<td>长大</td>
+							<td>1258648454@qq.com</td>
+							<td class="mess-con">你好回答拿法额地方拿办</td>
+							<td>2016-03-04</td>
+						</tr>
+						<tr height=50>
+							<td>占大</td>
+							<td>1258648454@qq.com</td>
+							<td class="mess-con">你好回答拿法额地方拿办</td>
+							<td>2016-03-04</td>
+						</tr>
+					</table>
+					<span id="read-more">
+						<a href="javascript:changeMenu('comment.html','3');">查看全部未读消息...</a>
+					</span>
+				</div>
+			</div>
+		
+			<div id="section4">
+				<div class="admin-nav">
+					<strong>平台信息</strong>
+				</div>
+				<div class="admin-content">
+					<ul  class="admin-content-user">
+						<li>
+							<span>网站名称：</span><b>北京****科技有限公司</b>
+						</li>
+						<li>
+							<span>数据库：</span><b>NMDFEWFJEWRG</b>
+						</li>
+						<li>
+							<span>网站IP：</span><b>220.24.102.32</b>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="section2">
+			<div class="admin-nav">
+				<strong>用户信息</strong>
+			</div>
+			<div class="admin-content">
+				<ul  class="admin-content-user">
+					<li>
+						<span>用户名：</span><b>张大大</b>
+					</li>
+					<li>
+						<span>登录IP：</span><b>192.168.125.145</b>
+					</li>
+					<li>
+						<span>登录时间：</span><b>2016-2-25</b>
+					</li>
+				</ul>
+				<a href="javascript:changeMenu('userms-pass.html','5');" class="changepass fr" id="changebtn">修改密码</a>
+			</div>
+		</div>
+		<div id="section3">
+			<div class="admin-nav">
+				<strong>访问统计</strong>
+			</div>
+			<div class="admin-content">
+				<ul  class="admin-content-user">
+					<li>
+						<span>今日访问量：</span><b id="today">536</b>
+					</li>
+					<li>
+						<span>昨日访问量：</span><b>525</b>
+					</li>
+					<li>
+						<span>周访问量：</span><b>35624</b>
+					</li>
+					<li>
+						<span>月访问量：</span><b>356242</b>
+					</li>
+					<li>
+						<span>年访问量：</span><b>3562452</b>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

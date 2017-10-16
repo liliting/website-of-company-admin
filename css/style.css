@@ -1,0 +1,55 @@
+/*
+@Description : minelan admin;
+@Author : liliting;
+ */
+#section1,#section4{width:700px;}
+#section2,#section3{width:280px;float:left;}
+/*#section1 .admin-content{height:570px;}*/
+.admin-content-btn{margin-bottom:20px;text-align: right;position:relative;}
+#notice{position:absolute;right:310px;top:-6px;z-index:2;*zoom:1;}
+.admin-content-btn > a{background-color: #EFF2F7;border-radius:15px;padding:6px 30px;font-size:11px;margin-right:20px;}
+.admin-content-btn .active{background-color: #50C380;color:#FFF;}
+.admin-content-user li{margin-bottom:30px;margin-top:10px;}
+.admin-content-user  span{width:118px;text-align: right;font-size:14px;display:inline-block;}
+.admin-content-user  b{text-align:left;color:#333;font-weight:100;}
+#today{color:#50C380;}
+#section3 .admin-nav{margin-top:0;}
+.changepass{padding:10px 20px 20px 0px;color:#609CD8;display: inline-block;*display: inline;*zoom:1;}
+#message-table{border-collapse:collapse;margin-top:30px;color:#a1a1a1;}
+#message-table th{border:1px solid #a1a1a1;border-left:none;border-right:none;font-weight: 100;}
+#message-table td{border-bottom:1px solid #a1a1a1;text-align: center;padding:0;}
+#message-table .mess-con{max-width:180px;white-space: nowrap;overflow: hidden;text-overflow:ellipsis;}
+#read-more{margin-top:30px;margin-bottom:30px;display: block;text-align: center;}
+/*in*/
+#in{background-color: #4a99db;padding:0;margin:0;position:relative; color:#fff;}
+.middle{margin:0 auto;}
+#in>i{width:52px;height:167px;background: url(../images/ropes.png);display:block;}
+#in form{width:375px;height:420px;background:url(../images/login_background.png) no-repeat;margin-top:-32px;}
+#in h3{width:375px;margin:0;padding:0;padding-top:70px;margin-bottom:50px;text-align: center;}
+#username,#pass,#in-submit{width:230px;height:40px;background: #6eade2;border:1px solid #f2f2f2;border-radius:8px;display: block;outline:none;margin:0 auto 10px;box-shadow: 1px 1px 1px #666 inset;font-size:20px;color:#FFF;line-height: 40px;padding-left:50px;}
+#in-submit{width:280px;box-shadow: none;padding-left:0;background-color: #91c46c;color:#fff;border:1px solid #73a84c;border-radius:8px;opacity: 1;margin-top:50px;cursor:pointer;}
+form{position:relative;}
+form >i{position:absolute;left:63px;}
+.img{background:url(../images/img.png)  no-repeat;}
+.forgetpass{margin-left:30px;padding-left:20px;cursor:pointer;color:#FFF;vertical-align: middle;}
+.forget{width:16px;height:16px;display:inline-block;background-position:0 -16px;margin-right:5px;vertical-align: middle;}
+.remember{background-position:0 0;}
+i.lock{width:40px;height:32px;background-position:0 -32px;display: inline-block;}
+i.person{width:40px;height:32px;background-position:0 -72px;display: inline-block;}
+/*cms内容管理*/
+#cms-tab{padding-top:10px;margin-left:10px;padding-bottom:1px;}
+#cms-tab a{background: #FFF;padding:10px 35px;font-size:14px;margin-right:1px;}
+#cms-tab a.active{background: #50c380;color:#FFF;}
+/*comment*/
+.comment-edit{width:16px;height:16px;background: url(../images/edit.png) no-repeat;display:inline-block;*display: inline;*zoom:1;}
+.comment-edit-on{background: url(../images/edit_on.png) no-repeat;}
+/*logms*/
+.logms-form{margin-left:20px;margin-right:20px;}
+.logms-form input{width:150px;height:30px;border:1px solid #d6e0e9;margin-right:10px;padding-left:5px;}
+
+.nav-table input[type=text]{width:100px;height:30px;text-align:center;border:none;color:#444;}
+.all-check-a{display:inline-block;text-align:center;line-height:60px;height:60px;border:1px solid #f1f1f1;}
+.subnav-tr{background:#F3FAF3;}
+.subnav-tr > td{padding:10px;}
+.subnav-tr > td:nth-child(3):before{content:'';display: inline-block;color:#000;width:10px;
+height:10px;border-bottom:1px solid #969B97;border-left:1px solid #969B97;margin-right:5px;margin-bottom:5px;}

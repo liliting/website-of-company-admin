@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加用户</title>
+	<link rel="stylesheet" href="./css/base.css">
+</head>
+<body class="admin-infor">
+	<div class="admin-contains">
+		<div class="admin-nav">
+			<strong>用户设置 > 添加用户</strong>
+		</div>
+		<form action="">
+			<div class="admin-content">
+				<span class="admin-di">基本设置</span>
+				<ul class="infor-ul">
+					<li class="infor-li">	
+						<span class="infor-left">用户姓名：</span>
+						<input type="text" class="right" value="马大姐">
+						<i class="pro">*不可使用特殊符号</i>
+					</li>
+					<li class="infor-li">	
+						<span class="infor-left">用户密码：</span>
+						<input type="password" class="right" value="" placeholder="******">
+						<i class="pro">*6-16位用户密码</i>
+					</li>
+					<li class="infor-li">	
+						<span class="infor-left">重复用户密码：</span>
+						<input type="password" class="right" value="" placeholder="******">
+						<i class="pro"></i>
+					</li>
+					<li class="infor-li">	
+						<span class="infor-left">用户邮箱：</span>
+						<input type="text" class="right" value="" placeholder="邮箱">
+						<i class="pro">*必填</i>
+					</li>
+					<li class="infor-li">	
+						<span class="infor-left">联系电话：</span>
+						<input type="text" class="right" value="" placeholder="电话">
+						<i class="pro">*必填</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">用户权限：</span>
+						<span class="admin-select select-power right">
+							<select name="" id="power">
+								<option value="all">1、普通用户：后台首页、基本信息、内容管理、官网消息</option>
+								<option value="all">2、管理员用户</option>
+							</select>
+						</span>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">账号状态：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="close">暂停使用</option>
+								<option value="open">启用</option>
+							</select>
+						</span>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">所属群组：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="admin">管理员</option>
+								<option value="user">管理用户</option>
+							</select>
+						</span>
+					</li>
+				</ul>
+				<input type="submit" value="保存" class="button save"/>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

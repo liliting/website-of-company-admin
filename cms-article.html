@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文章内容编辑</title>
+	<meta name="renderer" content="webkit"> 
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./js/kindeditor/themes/default/default.css">
+	<link rel="stylesheet" href="./css/jquery.datetimepicker.css">
+</head>
+<body class="admin-infor">
+	<div class="admin-contains">
+		<div class="admin-nav">
+			<strong>文章发布内容 > 编辑</strong>
+		</div>
+		<form action="">
+			<div class="admin-content">
+				<span class="admin-di">属性设置</span>
+				<ul class="infor-ul">
+					<li class="infor-li">	
+						<span class="infor-left">标题名称：</span>
+						<input type="text" class="right" value="关于我们">
+						<i class="pro">*不可使用特殊符号</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">缩略图：</span>
+						<img src="" alt="logo" class="right min-img" width="255" height="120" id="img0">
+						<button class="upload"><input type="file" class="right" value="上传">上传</button>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">网站描述：</span>
+						<textarea name="" id="" cols="44" rows="10" class="right" placeholder="描述..." size="300"></textarea>
+						<i class="pro">*300字以内,当前已输入<span>0</span>个字符</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">排序：</span>
+						<input type="text" class="right" value="1">
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">所属栏目：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="news">公司新闻</option>
+								<option value="about">最新动态</option>
+							</select>
+						</span>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">前台展示：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</span>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">可选属性：</span>	
+						<span class="admin-checkbox check-article">
+							<input type="checkbox" id="top" />
+							<label for="top" class="article-attr">置顶</label>
+						</span>
+						<span class="admin-checkbox check-article">
+							<input type="checkbox" id="advice" />
+							<label for="advice" class="article-attr">推荐</label>
+						</span>
+						<span class="admin-checkbox check-article">
+							<input type="checkbox" id="huo" />
+							<label for="huo" class="article-attr">热门</label>
+						</span>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">发布时间：</span>
+						<span class="datetime-span"><input type="text" value="" class="datetime" id="datetimepicker1">
+							<img src="./images/time.png" alt="" class="datetimeimg" id="dateimg1">
+						</span>
+					</li>
+				</ul>
+
+				<span class="admin-di">内容编辑</span>
+				<script charset="utf-8" src="./js/kindeditor/kindeditor-min.js"></script>
+				<script charset="utf-8" src="./js/kindeditor/lang/zh_CN.js"></script>
+				<script>
+					var editor;
+					KindEditor.ready(function(K) {
+						editor = K.create('textarea[name="content"]', {
+							allowFileManager : true
+						});
+						K('input[type=submit]').click(function(e) {
+							alert(editor.html());//获取html中内容
+						});
+					});
+				</script>
+				<div class="infor-ul">
+					<textarea name="content" class="kindeditor"></textarea>
+				</div>
+				<input type="submit" value="保存" class="button save"/>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/jquery.datetimepicker.js"></script>
+	<script type="text/javascript">
+		$('#datetimepicker1').datetimepicker();
+		$('#dateimg1').click(function(){
+			$('#datetimepicker1').datetimepicker('show');
+		});
+	</script>
+</body>
+</html>

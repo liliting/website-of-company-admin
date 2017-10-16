@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户管理</title>
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/jquery.datetimepicker.css">
+</head>
+<body id="admin-comment">
+	<div class="admin-contains">
+		<div class="admin-nav">
+			<strong>后台管理</strong>
+		</div>
+		<div class="admin-content">
+			<form action="" class="logms-form">
+				姓名：<input type="text">
+				电话：<input type="text">
+				邮箱：<input type="text">
+				<span class="datetime-span fr">时间：<input type="text" value="" class="datetime" id="datetimepicker">
+					<img src="./images/time.png" alt="" class="datetimeimg" id="dateimg">
+				</span>
+			</form>
+			<table width="100%" align="center" border=0 cellpadding="20">
+				<tr>
+					<th width="10%">选择</th>
+					<th width="10%">姓名</th>
+					<th width="35%">操作描述</th>
+					<th width="20%">操作时间</th>
+					<th width="15%">访问IP</th>
+					<th width="10%">操作</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="user1"  />
+							<label for="user1" id="userlabel1"></label>
+						</div>
+					</td>
+					<td>你是谁</td>
+					<td>用户登录并删除新闻</td>
+					<td>2016-02-03 16:15:32</td>
+					<td>192.168.123.234</td>
+					<td>
+						<a href="logms-des.html">查看</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="user2"  />
+							<label for="user2" id="userlabel2"></label>
+						</div>
+					</td>
+					<td>你是谁</td>
+					<td>用户登录并删除新闻</td>
+					<td>2016-02-03 16:15:32</td>
+					<td>192.168.123.234</td>
+					<td>
+						<a href="logms-des.html">查看</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="user3"  />
+							<label for="user3" id="chooselabel3"></label>
+						</div>
+					</td>
+					<td>你是谁</td>
+					<td>用户登录并删除新闻</td>
+					<td>2016-02-03 16:15:32</td>
+					<td>192.168.123.234</td>
+					<td>
+						<a href="logms-des.html">查看</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="user4" />
+							<label for="user4" id="userlabel4"></label>
+						</div>
+					</td>
+					<td>你是谁</td>
+					<td>用户登录并删除新闻</td>
+					<td>2016-02-03 16:15:32</td>
+					<td>192.168.123.234</td>
+					<td>
+						<a href="logms-des.html">查看</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="" class="all-check">全选</a>
+					</td>
+				</tr>
+			</table>
+			<div class="admin-page">
+				<a href=""><<</a>
+				<a href=""><</a>
+				<span>1</span>
+				<a href="">></a>
+				<a href="">>></a>		
+			</div>
+			<form class="admin-page-form">
+				<input type="text">
+				<input type="submit" value="go">
+			</form>
+			<div class="admin-button">
+				<a href="#" class="button">删除</a>
+				<a href="#" class="button">导出</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript" src="./js/jquery.datetimepicker.js"></script>
+	<script type="text/javascript">
+		$('#datetimepicker').datetimepicker();
+		$('#dateimg').click(function(){
+			$('#datetimepicker').datetimepicker('show');
+		});
+	</script>
+</body>
+</html>

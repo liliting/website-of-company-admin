@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>导航设置编辑</title>
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="./css/base.css">
+</head>
+<body class="admin-infor">
+	<div class="admin-contains">
+		<div class="admin-nav">
+			<strong>导航栏表单设置 > 设置</strong>
+		</div>
+		<form action="">
+			<div class="admin-content">
+				<span class="admin-di">属性设置</span>
+				<ul class="infor-ul">
+					<li class="infor-li">	
+						<span class="infor-left">栏目名称：</span>
+						<input type="text" class="right" value="北京明兰网络科技有限公司">
+						<i class="pro">*不可使用特殊符号</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">导航栏显示：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="top">头部显示</option>
+								<option value="bottom">尾部显示</option>
+								<option value="all">头、尾部全显</option>
+								<option value="hide">不显示</option>
+							</select>
+						</span>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">所属栏目：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="index">首页</option>
+								<option value="solution">解决方案</option>
+								<option value="work">业务领域</option>
+								<option value="tec">技术支持</option>
+								<option value="about">关于我们</option>
+								<option value="no">无所属</option>
+							</select>
+						</span>
+						<i class="pro">**无所属*即视为一级导航</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">前台展示：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</span>
+					</li>
+					<li class="infor-li">	
+						<span class="infor-left">静态页面名称：</span>
+						<input type="text" class="right" value="新闻动态">
+						<i class="pro">*用于相同内容，不同标签</i>
+					</li>
+				</ul>
+			</div>
+			<div class="admin-content">
+				<span class="admin-di">搜索设置</span>
+				<ul class="infor-ul">
+					<li class="infor-li">
+						<span class="infor-left">关键词：</span>
+						<input type="text" class="right" placeholder="关键词...">
+						<i class="pro">*多个关键词请用空格隔开</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">网站描述：</span>
+						<textarea name="" id="" cols="44" rows="10" class="right" placeholder="描述..." size="200"></textarea>
+						<i class="pro des-pro">*200字以内</i>
+					</li>
+				</ul>
+				<input type="submit" value="保存" class="button save"/>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

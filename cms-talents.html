@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>人才内容编辑</title>
+	<meta name="renderer" content="webkit">
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./js/kindeditor/themes/default/default.css">
+</head>
+<body class="admin-infor">
+	<div class="admin-contains">
+		<div class="admin-nav">
+			<strong>人才招聘内容 > 编辑</strong>
+		</div>
+		<form action="">
+			<div class="admin-content">
+				<span class="admin-di">属性设置</span>
+				<ul class="infor-ul">
+					<li class="infor-li">	
+						<span class="infor-left">职位名称：</span>
+						<input type="text" class="right" value="关于我们">
+						<i class="pro">*不可使用特殊符号</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">所属栏目：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="tec">技术研发</option>
+								<option value="product">产品运营</option>
+								<option value="service">客户服务</option>
+								<option value="sale">市场营销</option>
+								<option value="manage-support">管理支持</option>
+								<option value="all-positions">全部岗位</option>
+							</select>
+						</span>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">前台展示：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</span>
+					</li>
+				</ul>
+			</div>
+
+			<div class="admin-content">
+				<span class="admin-di">搜索设置</span>
+				<ul class="infor-ul">
+					<li class="infor-li">
+						<span class="infor-left">关键词：</span>
+						<input type="text" class="right" placeholder="关键词">
+						<i class="pro">*多个关键词请用空格隔开</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">描述：</span>
+						<textarea name="" id="" cols="44" rows="10" class="right" placeholder="描述..." size="200"></textarea>
+						<i class="pro top">*200字以内</i>
+					</li>
+				</ul>
+			</div>
+			<div class="admin-nav">
+				<strong>内容发布</strong>
+			</div>
+			<div class="admin-content">
+				<span class="admin-di">内容编辑</span>
+				<script charset="utf-8" src="./js/kindeditor/kindeditor-min.js"></script>
+				<script charset="utf-8" src="./js/kindeditor/lang/zh_CN.js"></script>
+				<script>
+					var editor;
+					KindEditor.ready(function(K) {
+						editor = K.create('textarea[name="content"]', {
+							allowFileManager : true
+						});
+						K('input[type=submit]').click(function(e) {
+							alert(editor.html());//获取html中内容
+						});
+					});
+				</script>
+				<div class="infor-ul">
+					<textarea name="content" class="kindeditor"></textarea>
+				</div>
+				<input type="submit" value="保存" class="button save"/>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

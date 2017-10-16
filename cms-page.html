@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>页面内容编辑</title>
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./js/kindeditor/themes/default/default.css">
+</head>
+<body class="admin-infor">
+	<div class="admin-contains">
+		<div class="admin-nav">
+			<strong>页面发布内容 > 编辑</strong>
+		</div>
+		<form action="">
+			<div class="admin-content">
+				<span class="admin-di">属性设置</span>
+				<ul class="infor-ul">
+					<li class="infor-li">	
+						<span class="infor-left">标题名称：</span>
+						<input type="text" class="right" value="关于我们">
+						<i class="pro">*不可使用特殊符号</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">所属栏目：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="index">首页</option>
+								<option value="solution">解决方案</option>
+								<option value="work">业务领域</option>
+								<option value="tec">技术支持</option>
+								<option value="about">关于我们</option>
+								<option value="no">无所属</option>
+							</select>
+						</span>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">前台展示：</span>
+						<span class="admin-select right">
+							<select name="" id="">
+								<option value="1">是</option>
+								<option value="0">否</option>
+							</select>
+						</span>
+					</li>
+					<li class="infor-li">	
+						<span class="infor-left">静态页面名称：</span>
+						<input type="text" class="right" value="明兰简介">
+						<i class="pro">*用于相同内容不同标题</i>
+					</li>
+				</ul>
+			</div>
+
+			<div class="admin-content">
+				<span class="admin-di">搜索设置</span>
+				<ul class="infor-ul">
+					<li class="infor-li">
+						<span class="infor-left">关键词：</span>
+						<input type="text" class="right" placeholder="关键词">
+						<i class="pro">*多个关键词请用空格隔开</i>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">描述：</span>
+						<textarea name="" id="" cols="44" rows="10" class="right" placeholder="描述..." size="200" ></textarea>
+						<i class="pro top">*200字以内</i>
+					</li>
+				</ul>
+			</div>
+			<div class="admin-nav">
+				<strong>内容发布</strong>
+			</div>
+			<div class="admin-content">
+				<span class="admin-di">banner图编辑</span>
+				<ul class="infor-ul">
+					<li class="infor-li">
+						<span class="infor-left top">banner图：</span>
+						<img src="" alt="banner图" class="right min-img" width="255" height="120" >
+						<button class="upload"><input type="file" class="right" value="上传">上传</button>
+					</li>
+				</ul>
+				<span class="admin-di">展示图编辑</span>
+				<ul class="infor-ul">
+					<li class="infor-li">
+						<span class="infor-left top">展示图：</span>
+						<img src="" alt="展示图" class="right min-img" width="255" height="120" >
+						<button class="upload"><input type="file" class="right" value="上传">上传</button>
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">标题：</span>
+						<input type="text" class="right" placeholder="标题">
+					</li>
+					<li class="infor-li">
+						<span class="infor-left">标题2：</span>
+						<input type="text" class="right" placeholder="标题">
+					</li>
+					<li class="infor-li">
+						<span class="infor-left top">描述：</span>
+						<textarea name="" id="" cols="44" rows="10" class="right" placeholder="描述.." size="200"></textarea>
+					</li>
+				</ul>
+				<span class="admin-di">内容编辑</span>
+				<script charset="utf-8" src="./js/kindeditor/kindeditor-min.js"></script>
+				<script charset="utf-8" src="./js/kindeditor/lang/zh_CN.js"></script>
+				<script>
+					var editor;
+					KindEditor.ready(function(K) {
+						editor = K.create('textarea[name="content"]', {
+							allowFileManager : true
+						});
+						K('input[type=submit]').click(function(e) {
+							alert(editor.html());//获取html中内容
+						});
+					});
+				</script>
+				<div class="infor-ul">
+					<textarea name="content" class="kindeditor"></textarea>
+				</div>
+				<input type="submit" value="保存" class="button save"/>
+			</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="in">
+	<i class="middle"></i>
+	<form method="post" action="" class="middle">
+		<h3>登录</h3>
+		<i class="img person"></i>
+		<input type="text" name="username" value="用户名" id="username">
+		<i class="img lock"></i>
+		<input type="password" name="password" value="******" id="pass">
+		<div class="forgetpass">
+		<i class="img forget"></i>记住密码</div>
+		<input type="submit" value="提交" id="in-submit">
+	</form>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#username').focus(function(){
+			if($(this).val()=="用户名"){
+				$(this).val('');
+			}
+		});
+		$('#pass').focus(function(){
+			if($(this).val()=="******"){
+				$(this).val('');
+			}
+		});
+		$('.forgetpass').on('click',function(){
+			$(this).find('i').toggleClass('remember');
+		 	return false;
+		});		
+	});
+	</script>
+</body>
+</html>

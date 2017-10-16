@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户管理</title>
+	<link rel="stylesheet" href="./css/base.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body id="admin-comment">
+	<div class="admin-contains">
+		<div class="admin-nav">
+			<strong>官网消息 > 所有消息</strong>
+		</div>
+		<div class="admin-content">
+			<div class="admin-select fl">
+				<select name="order" id="allcom">
+					<option value="all">全部</option>
+					<option value="solve">待处理消息</option>
+					<option value="unread">未读消息</option>
+				</select>
+			</div>
+			<form class="admin-search fr">
+				<input type="text" class="admin-search-text">
+				<input type="submit" value="" class="admin-search-submit">
+			</form>
+			<table width="100%" align="center" border=0 cellpadding="20">
+				<tr>
+					<th width="10%">选择</th>
+					<th width="10%">姓名</th>
+					<th width="15%">邮箱</th>
+					<th width="40%">内容</th>
+					<th width="15%">备注</th>
+					<th width="10%">操作</th>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="user1"  />
+							<label for="user1" id="userlabel1"></label>
+						</div>
+					</td>
+					<td>你是谁</td>
+					<td>jska@mine.com</td>
+					<td>1、普通用户：后台首页、基本信息、内容管理、官网消息</td>
+					<td>暂停使用</td>
+					<td>
+						<a href="#" class="comment-edit"></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="user2"  />
+							<label for="user2" id="userlabel2"></label>
+						</div>
+					</td>
+					<td>你是谁</td>
+					<td>jska@mine.com</td>
+					<td>1、普通用户：后台首页、基本信息、内容管理、官网消息</td>
+					<td>暂停使用</td>
+					<td>
+						<a href="#" class="comment-edit"></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="user3"  />
+							<label for="user3" id="chooselabel3"></label>
+						</div>
+					</td>
+					<td>你是谁</td>
+					<td>jska@mine.com</td>
+					<td>1、普通用户：后台首页、基本信息、内容管理、官网消息</td>
+					<td>暂停使用</td>
+					<td>
+						<a href="#" class="comment-edit"></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="admin-checkbox">
+							<input type="checkbox" id="user4" />
+							<label for="user4" id="userlabel4"></label>
+						</div>
+					</td>
+					<td>你是谁</td>
+					<td>jska@mine.com</td>
+					<td>1、普通用户：后台首页、基本信息、内容管理、官网消息</td>
+					<td>暂停使用</td>
+					<td>
+						<a href="#" class="comment-edit"></a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="" class="all-check">全选</a>
+					</td>
+				</tr>
+			</table>
+			<div class="admin-page">
+				<a href=""><<</a>
+				<a href=""><</a>
+				<span>1</span>
+				<a href="">></a>
+				<a href="">>></a>		
+			</div>
+			<form class="admin-page-form">
+				<input type="text">
+				<input type="submit" value="go">
+			</form>
+			<div class="admin-button">
+				<a href="#" class="button">删除</a>
+				<a href="#" class="button">标记待处理</a>
+				<a href="#" class="button">取消标记</a>
+				<a href="#" class="button">导出</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="./js/common.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('.comment-edit').click(function(){
+				
+			});
+		});
+	</script>
+</body>
+</html>
